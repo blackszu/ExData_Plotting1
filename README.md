@@ -18,9 +18,9 @@ Each PNG file is contructed with :
 
 ## R code files
 
-Each R code file execute by the following steps:
+Each R code file executes by the following steps:
 
-<li><b>Import Source Data</b>: </li>
+<li><b>1. Import Source Data :</b> </li>
 
 1.1 If the source data file "household_power_consumption.txt" does not 
 exist in R working directory, the script will unzip/download from the 
@@ -38,7 +38,7 @@ faster than reading in the entire data set
 
 1.5 convert variables Date/Time from string to Date/POSIXlt format
 
-<li><b>Plotting</b>: </li>
+<li><b>2. Plotting :</b> </li>
 
 2.1 Open png device, create "plot#.png" in R working directory
 
