@@ -1,3 +1,58 @@
+## Exploratory Data Analysis Course Project 1
+
+This repository has four PNG files and four R code files. Each R code
+file generates the corresponding plot, for example, 'plot1.R' generates 
+'plot1.png'.
+
+
+## PNG files
+
+Each PNG file is contructed with :
+
+* a width of 480 pixels and a height of 480 pixels.
+
+* "transparant" background as seen in the original GitHub repository 
+[https://github.com/rdpeng/ExData_Plotting1/tree/master/figure](https://github.com/rdpeng/ExData_Plotting1/tree/master/figure)
+
+
+
+## R code files
+
+Each R code file execute by the following steps:
+
+<li><b>Import Source Data</b>: </li>
+
+1.1 If the source data file "household_power_consumption.txt" does not 
+exist in R working directory, the script will unzip/download from the 
+source url.
+
+1.2 Load only first 100 rows to get column classes. Specifying column 
+classes will help speed up reading large data set (read.table function)
+
+1.3 Read all data as text lines and keep only data from Date 1/2/2007 
+and 2/2/2007. Since we are given the information of specific subset data 
+that are required for this assignment, using readLines function is 
+faster than reading in the entire data set
+
+1.4 convert text lines to data frame
+
+1.5 convert variables Date/Time from string to Date/POSIXlt format
+
+<li><b>Plotting</b>: </li>
+
+2.1 Open png device, create "plot#.png" in R working directory
+
+2.2 Plotting
+
+2.3 close png file device and set to default device. The plot is send 
+to the png file and no plot appears on screen. The output file will replace 
+the existing file with the same file name.
+
+Below are the original README instruction :
+
+========================================================================
+
+
 ## Introduction
 
 This assignment uses data from
